@@ -13,11 +13,11 @@ namespace Events
         // 2. Create event using delegate
         // 3. Invoke event
         // 4. Attach Handler
-        public delegate void SimpleDelegate();
+        public delegate void SimpleDelegate(string args);
         public SimpleDelegate SimpleEvent;
-        public void InvokeEvent()
+        public void InvokeEvent(string customArgs)
         {
-            SimpleEvent();
+            SimpleEvent(customArgs);
         }
     }
 }

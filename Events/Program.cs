@@ -10,6 +10,18 @@ namespace Events
     {
         static void Main(string[] args)
         {
+            EventsHandler customEventHandler = new EventsHandler();
+            customEventHandler.SimpleEvent += SampleEventHandler;
+            
+            customEventHandler.InvokeEvent("Custom arguments");
+        }
+
+       
+
+        private static void SampleEventHandler(string args)
+        {
+            Console.WriteLine("Event is Raised with args:"+args);
+            Console.ReadLine();
         }
     }
 }

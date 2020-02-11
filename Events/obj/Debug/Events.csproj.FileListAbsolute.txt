@@ -1,1 +1,6 @@
 C:\Users\Asad Mukhtar\Documents\Visual Studio 2015\Projects\CHash\Events\bin\Debug\Events.exe.config
+C:\Users\Asad Mukhtar\Documents\Visual Studio 2015\Projects\CHash\Events\bin\Debug\Events.exe
+C:\Users\Asad Mukhtar\Documents\Visual Studio 2015\Projects\CHash\Events\bin\Debug\Events.pdb
+C:\Users\Asad Mukhtar\Documents\Visual Studio 2015\Projects\CHash\Events\obj\Debug\Events.csprojResolveAssemblyReference.cache
+C:\Users\Asad Mukhtar\Documents\Visual Studio 2015\Projects\CHash\Events\obj\Debug\Events.exe
+C:\Users\Asad Mukhtar\Documents\Visual Studio 2015\Projects\CHash\Events\obj\Debug\Events.pdb
