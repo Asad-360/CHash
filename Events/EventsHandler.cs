@@ -15,9 +15,25 @@ namespace Events
         // 4. Attach Handler
         public delegate void SimpleDelegate(string args);
         public SimpleDelegate SimpleEvent;
+
+        public event EventHandler CustomEventHandler;
         public void InvokeEvent(string customArgs)
         {
             SimpleEvent(customArgs);
         }
+
+        public void InvokeDefaultEventHandler()
+        {
+            if (CustomEventHandler != null)
+            {
+                var customEventArgs = new CustomEventArgs();
+                customEventArgs.Name = "JoeRoot";
+                CustomEventHandler(this, customEventArgs);
+            }
+        }
+    }
+    public class CustomEventArgs: EventArgs
+    {
+        public string Name { get; set; }
     }
 }
