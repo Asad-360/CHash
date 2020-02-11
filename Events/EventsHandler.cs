@@ -8,5 +8,16 @@ namespace Events
 {
     public class EventsHandler
     {
+        // Steps for creating events 
+        // 1. Create simple delegate
+        // 2. Create event using delegate
+        // 3. Invoke event
+        // 4. Attach Handler
+        public delegate void SimpleDelegate();
+        public SimpleDelegate SimpleEvent;
+        public void InvokeEvent()
+        {
+            SimpleEvent();
+        }
     }
 }
